@@ -105,10 +105,17 @@
 			        <skip>true</skip>
 			    </configuration>
 			</plugin>
-			<plugin>
-	            <groupId>org.sonatype.central</groupId>
-	            <artifactId>central-publishing-maven-plugin</artifactId>
-	        </plugin>
+						        <plugin>
+			          <groupId>org.sonatype.central</groupId>
+			          <artifactId>central-publishing-maven-plugin</artifactId>
+			          <version>0.9.0</version>
+			          <extensions>true</extensions>
+			          <configuration>
+			            <publishingServerId>central-jadaptive</publishingServerId>
+			            <autoPublish>true</autoPublish>
+                        <waitUntil>published</waitUntil>
+			          </configuration>
+			        </plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>properties-maven-plugin</artifactId>
@@ -220,18 +227,6 @@
 						</dependencySourceIncludes>
 					</configuration>
 				</plugin>
-
-			        <plugin>
-			          <groupId>org.sonatype.central</groupId>
-			          <artifactId>central-publishing-maven-plugin</artifactId>
-			          <version>0.9.0</version>
-			          <extensions>true</extensions>
-			          <configuration>
-			            <publishingServerId>central-jadaptive</publishingServerId>
-			            <autoPublish>true</autoPublish>
-                        <waitUntil>published</waitUntil>
-			          </configuration>
-			        </plugin>
 			    </plugins>
 		</pluginManagement>
 	</build>
