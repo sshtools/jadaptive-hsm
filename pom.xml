@@ -17,7 +17,7 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.jadaptive</groupId>
+	<groupId>com.sshtools</groupId>
 	<artifactId>jadaptive-hsm</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>JADAPTIVE - HSM Utilities</name>
@@ -57,8 +57,8 @@
 
 	<scm>
 		<url>http://github.com/ludup/jadaptive</url>
-		<connection>scm:git:https://github.com/ludup/jadaptive</connection>
-		<developerConnection>scm:git:https://github.com/ludup/jadaptive</developerConnection>
+		<connection>scm:git:https://github.com/sshtools/jadaptive-hsm</connection>
+		<developerConnection>scm:git:https://github.com/sshtools/jadaptive-hsm</developerConnection>
 	</scm>
 
 	<dependencies>
@@ -111,7 +111,7 @@
 			          <version>0.9.0</version>
 			          <extensions>true</extensions>
 			          <configuration>
-			            <publishingServerId>central-jadaptive</publishingServerId>
+			            <publishingServerId>central-sshtools</publishingServerId>
 			            <autoPublish>true</autoPublish>
                         <waitUntil>published</waitUntil>
 			          </configuration>
