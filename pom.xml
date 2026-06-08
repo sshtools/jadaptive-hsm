@@ -32,7 +32,7 @@
 		<build.userProperties>${user.home}/.jadaptive.build.properties</build.userProperties>
 	</properties>
 
-	<url>https://github.com/ludup/jadaptive</url>
+	<url>https://github.com/sshtools/jadaptive-hsm</url>
 
 	<organization>
 		<name>Jadaptive</name>
@@ -105,17 +105,16 @@
 			        <skip>true</skip>
 			    </configuration>
 			</plugin>
-						        <plugin>
-			          <groupId>org.sonatype.central</groupId>
-			          <artifactId>central-publishing-maven-plugin</artifactId>
-			          <version>0.9.0</version>
-			          <extensions>true</extensions>
-			          <configuration>
-			            <publishingServerId>central-sshtools</publishingServerId>
-			            <autoPublish>true</autoPublish>
-                        <waitUntil>published</waitUntil>
-			          </configuration>
-			        </plugin>
+			<plugin>
+			    <groupId>org.sonatype.central</groupId>
+			    <artifactId>central-publishing-maven-plugin</artifactId>
+			    <version>0.8.0</version>
+				<extensions>true</extensions>
+				<configuration>
+				   <publishingServerId>central-sshtools</publishingServerId>
+				   <autoPublish>true</autoPublish>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>properties-maven-plugin</artifactId>
