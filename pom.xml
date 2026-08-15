@@ -19,7 +19,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sshtools</groupId>
 	<artifactId>jadaptive-hsm</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>JADAPTIVE - HSM Utilities</name>
 	<description>Hardware and software encryption providers for Jadaptive.</description>
 
